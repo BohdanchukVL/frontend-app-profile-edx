@@ -1,0 +1,27 @@
+$primary: #ec5713 !default;
+$brand: #ec5713 !default;
+$accent-a: #73d5ff !default;
+$accent-b: #73d5ff !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "brand":      $brand,
+    "accent-a":   $accent-a,
+    "accent-b":   $accent-b,
+  ),
+  $theme-colors
+);
+
+@import "~@edx/brand/paragon/fonts";
+@import "~@edx/brand/paragon/variables";
+@import "~@edx/paragon/scss/core/core";
+@import "~@edx/brand/paragon/overrides";
+@import "~@edx/frontend-component-header/dist/index";
+@import "~@edx/frontend-component-footer/dist/footer";
+
+@import './profile/index';
+
+/** liberties styling **/
+@import "src/assets/scss/liberties.scss";
