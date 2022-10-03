@@ -73,6 +73,7 @@ a:not(.btn):hover, .btn-link:hover {
 #root header {
   background-color: #000;
   color: #969696;
+  padding: 5px 0;
 
   a {
     color: #969696!important;
@@ -83,8 +84,14 @@ a:not(.btn):hover, .btn-link:hover {
     font-family: 'Roboto Condensed', sans-serif!important;
   }
 
-  a:not(.btn):hover {
+  a:not(.btn):not(.logo):hover {
     border-bottom: 2px solid #ec5713;
+    padding: 0;
+    background: transparent;
+  }
+
+  .menu-trigger {
+    padding: 10px!important;
   }
 
   .logo {
@@ -242,5 +249,15 @@ body .bg-warning-300 {
     padding: 0!important;
     background: transparent!important;
     border: none!important;
+  }
+  nav {
+    .icon-button {
+     background-color: #ec5713;
+     color: #fff;
+     transition: .25s;
+    }
+  }
+  #root header .logo {
+    height: 1.5rem;
   }
 }
