@@ -84,9 +84,12 @@ a:not(.btn):hover, .btn-link:hover {
     font-family: 'Roboto Condensed', sans-serif!important;
   }
 
+  .nav-link {
+    padding: 0;
+  }
+
   a:not(.btn):not(.logo):hover {
     border-bottom: 2px solid #ec5713;
-    padding: 0;
     background: transparent;
   }
 
@@ -250,7 +253,7 @@ body .bg-warning-300 {
     background: transparent!important;
     border: none!important;
   }
-  nav {
+  header {
     .icon-button {
      background-color: #ec5713;
      color: #fff;
